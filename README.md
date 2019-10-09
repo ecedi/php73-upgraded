@@ -19,10 +19,6 @@ docker run --entrypoint "apache2-foreground" ecedi/php71-apache-upgraded
 ```
 An exemple of entrypoint is also provided with composer and yarn installation.
 
-## Troubleshooting
-
-If something goes wrong, errors & exceptions feel free to contact us.
-
 ## Ecedi Community Support
 
-Have a question? Join our [Email LD](mailto:ld@ecedi.fr)
+Have a question?  Contact us [Email LD](mailto:ld@ecedi.fr)
