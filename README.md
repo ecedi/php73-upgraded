@@ -1,4 +1,4 @@
-# Docker image with PHP 7.1 - Apache
+# Docker image with PHP 7.3 - Apache
 
 ![Ecedi Agency](https://www.ecedi.fr/theme/images/logo-ecedi-top.png)
 
