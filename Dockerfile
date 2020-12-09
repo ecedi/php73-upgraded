@@ -3,8 +3,7 @@ FROM php:7.3-apache
 RUN sed -ri -e 's!/var/www/html!/var/www/html/web!g' /etc/apache2/sites-available/*.conf
 RUN sed -ri -e 's!/var/www/html!/var/www/html/web!g' /etc/apache2/apache2.conf /etc/apache2/conf-available/*.conf
 
-RUN apt-get update && \
-    apt-get install -y curl \
+RUN apt-get update && \apt-get install -y curl \
     acl \
     zsh \
     sudo \
@@ -22,6 +21,9 @@ RUN apt-get update && \
     libfreetype6-dev \
     libssh2-1-dev \
     libssh2-1 \
+    libzip-dev \
+    mariadb-client-10.3 \
+    libnss3-tools \
     rsync \
     && docker-php-ext-configure pdo_mysql \
     && docker-php-ext-install -j$(nproc) pdo_mysql \
