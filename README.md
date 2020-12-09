@@ -2,7 +2,7 @@
 
 ![Ecedi Agency](https://www.ecedi.fr/theme/images/logo-ecedi-top.png)
 
-**This is image is based on the official docker image php71-apache <https://hub.docker.com/_/php>.**
+**This is image is based on the official docker image php73-apache <https://hub.docker.com/_/php>.**
 
 ## Documentation
 
