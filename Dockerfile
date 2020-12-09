@@ -37,8 +37,8 @@ RUN apt-get update && \apt-get install -y curl \
     && docker-php-ext-install -j$(nproc) gd \
     && npm install -g yarn
 
-RUN pecl install ssh2-1.1.2 xdebug-2.7.2 \
-    && docker-php-ext-enable ssh2 xdebug \
+RUN pecl install xdebug-2.7.2 \
+    && docker-php-ext-enable xdebug \
     && echo "xdebug.remote_enable=1" >> /usr/local/etc/php/conf.d/docker-php-ext-xdebug.ini \
     && echo "xdebug.remote_autostart=1" >> /usr/local/etc/php/conf.d/docker-php-ext-xdebug.ini \
     && echo "xdebug.remote_host=host.docker.internal" >> /usr/local/etc/php/conf.d/docker-php-ext-xdebug.ini \
